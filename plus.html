@@ -1,0 +1,100 @@
+<!DOCTYPE html:5>
+<html lang="fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="icon" type="icone/png" href="image/icone.png" />
+	<meta name="viewport" content="width, initial-scale=1.0" />
+	<title> ATONE </title>
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" async></script>
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+	<header>
+	<a href="index.html" class="brand">Atone</a>
+	<div class="menu">
+		<div class="btn">
+			<i class="fas fa-times close-btn"></i>
+		</div>
+		 <a href="plus.html"> Vos questions </a>
+		 <a href="shop.html"> Produits </a>
+		 <a href="lien.html"> Liens </a>
+		 <a href="actuality.html"> Actualité </a>
+	</div>
+	<div class="btn">
+		<i class="fas fa-bars menu-btn"></i>
+	</div>
+	</header>
+	<script type="text/javascript">
+	//javascript for navigation bar effect on scroll
+	window.addEventListener("scroll", function(){
+	var header = document.querySelector("header");
+	header.classList.toggle('sticky', window.scrollY > 0);
+	});
+
+	//javascript for responsive navigation sidebar menu
+	var menu = document.querySelector('.menu');
+	var menuBtn = document.querySelector('.menu-btn');
+	var closeBtn = document.querySelector('.close-btn');
+
+	menuBtn.addEventListener("click", () => {
+	menu.classList.add('active');
+	});
+
+	closeBtn.addEventListener("click", () => {
+	menu.classList.remove('active');
+	});
+	</script>
+
+
+   </header>
+ </section>
+
+ <section class="page_faq">
+
+ <li>Vos question, Nos reponses</li>
+
+
+ </section>
+
+<strong>Vos questions</strong><section class="trait_infos"></section><br>
+
+<div class="faq">
+<div class="question">Mais pourquoi ?</div>
+<div class="reponse">
+Le but est de créer un ordinateur qui veut régler les problèmes de l’informatique moderne, c'est-à-dire un ordinateur beau à regarder. et anti-obsolescence programmée
+</div>
+<div class="question">Oui, comme Apple, non ?</div>
+<div class="reponse">
+Non, car nous voulons en plus qu’il soit vendu à un prix abordable.
+un ordinateur moins cher :moneybag:
+Mais pas seulement ! Un ordinateur avec un OS Open Source.
+Il sera simple et surtout modulable.
+</div>
+<div class="question">comme un Rasberry pi quoi ?</div>
+<div class="reponse">
+Non plus, car il sera possible de personnaliser et de modifier son ordinateur à souhait. Nous souhaitons aussi que notre système d’exploitation soit un OS Linux,
+car il est optimisé et ouvert.
+ Aller HOP ! Encore une distribution lourde pour faire du traitement de texte !
+Toujours pas ! Le but est de créer un os léger, beau, pour des utilisateurs lambdas comme des amateurs d’informatique.
+</div>
+</div>
+
+</body>
+
+
+<footer>
+
+<p class="copyright">&copy; 2021 - ATONE computer </p>
+
+</footer>
+
+</html>
