@@ -3,6 +3,9 @@
 	margin: 0;
 	font-family: roboto;
 	box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
 }
 
 
@@ -14,5 +17,60 @@ header {
 
 li {
 list-style: none;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+li a {
+color: #fff;
+letter-spacing: 1.2px;
+display: block;
+padding: 14px 16px;
+margin: 0;
+
+}
+li:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+li a:hover {
+    background-color: #fff;
+    color: #FFBF85;
+}
+ul {
+padding: 1rem 0;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+li img {
+width: 60px;
+
+}
+
+
+
+/*bar de nav responsible*/
+@media only screen and (max-width: 750px) {
+
+  header {
+    position: relative;
+    display: block;
+    float: right;
+    height: 50px;
+    cursor: pointer;
+
+    &:after{
+      content:'';
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 0;
+      @include box-shadow:(0 10px 0 1px #fff);
+    }
+  }
 
 }
