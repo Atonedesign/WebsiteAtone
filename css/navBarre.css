@@ -21,7 +21,7 @@ text-transform: uppercase;
 font-weight: 600;
 }
 
-li a {
+li a.Nav {
 color: #fff;
 letter-spacing: 1.2px;
 display: block;
@@ -34,12 +34,12 @@ li:first-child {
   margin-left: 2rem;
 }
 
-li a:hover {
+li a.Nav:hover {
     background-color: #fff;
     color: #FFBF85;
 }
 ul {
-padding: 1rem 0;
+padding: 1px;
 display: flex;
 justify-content: flex-end;
 align-items: center;
@@ -47,7 +47,7 @@ align-items: center;
 }
 
 li img {
-width: 60px;
+width: 39px;
 
 }
 
